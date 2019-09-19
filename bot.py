@@ -22,6 +22,9 @@ async def on_ready():
     await client.change_presence(status=discord.Status.idle, activity=game)
 
 
+@commands.command(name="c", aliases=["공지"], rest_is_raw=True)
+
+
 @client.event
 async def on_message(message):
     id = message.author.id
@@ -53,4 +56,4 @@ async def on_message(message):
                     await message.channel.send("같습니다.")
                     break
 
-client.run('NjIzNDQ0NTAyNDM4NDc3ODI4.XYCiJw.wrG4yZ6103foI6vVCpQYGBeYg2I')
+client.run('')
